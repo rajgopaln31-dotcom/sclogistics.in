@@ -1,0 +1,27 @@
+.page-banner {
+  padding: 70px 0;
+  background: linear-gradient(120deg, var(--color-primary-dark), var(--color-primary));
+  color: var(--color-white);
+  text-align: center;
+}
+
+.page-banner h1 {
+  color: var(--color-white);
+  font-size: 40px;
+}
+
+.page-banner p {
+  margin-top: 8px;
+  color: var(--color-accent);
+  font-weight: 600;
+}
+
+@media (max-width: 600px) {
+  .page-banner {
+    padding: 48px 0;
+  }
+
+  .page-banner h1 {
+    font-size: 30px;
+  }
+}

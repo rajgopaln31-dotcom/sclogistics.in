@@ -1,0 +1,39 @@
+{
+  "logo8.png": { "dir": "logos", "url": "https://sclogistics.in/wp-content/uploads/2023/09/logo8.png" },
+  "logo4.png": { "dir": "logos", "url": "https://sclogistics.in/wp-content/uploads/2023/08/logo4.png" },
+  "slogo-300x300.png": { "dir": "logos", "url": "https://sclogistics.in/wp-content/uploads/2024/09/slogo-300x300.png" },
+
+  "about-photo.jpg": { "dir": "images", "url": "https://sclogistics.in/wp-content/uploads/2023/08/about-photo.jpg" },
+  "emp-e1725525792611.jpg": { "dir": "images", "url": "https://sclogistics.in/wp-content/uploads/2023/09/emp-e1725525792611.jpg" },
+  "bustp-e1725525819290.jpg": { "dir": "images", "url": "https://sclogistics.in/wp-content/uploads/2024/09/bustp-e1725525819290.jpg" },
+  "car2-e1725525842332.jpg": { "dir": "images", "url": "https://sclogistics.in/wp-content/uploads/2024/09/car2-e1725525842332.jpg" },
+
+  "one.jpg": { "dir": "images", "url": "https://sclogistics.in/wp-content/uploads/2024/05/one.jpg" },
+  "two.jpg": { "dir": "images", "url": "https://sclogistics.in/wp-content/uploads/2024/05/two.jpg" },
+  "three.jpg": { "dir": "images", "url": "https://sclogistics.in/wp-content/uploads/2024/05/three.jpg" },
+  "four.jpg": { "dir": "images", "url": "https://sclogistics.in/wp-content/uploads/2024/05/four.jpg" },
+  "five.jpg": { "dir": "images", "url": "https://sclogistics.in/wp-content/uploads/2024/05/five.jpg" },
+  "six.jpg": { "dir": "images", "url": "https://sclogistics.in/wp-content/uploads/2024/05/six.jpg" },
+  "gallery22.jpg": { "dir": "images", "url": "https://sclogistics.in/wp-content/uploads/2025/04/gallery22.jpg" },
+  "gallery3.jpg": { "dir": "images", "url": "https://sclogistics.in/wp-content/uploads/2025/04/gallery3.jpg" },
+
+  "IMG_8782-copy-scaled.jpg": { "dir": "images", "url": "https://sclogistics.in/wp-content/uploads/2023/09/IMG_8782-copy-scaled.jpg" },
+  "IMG_8844-copy-scaled.jpg": { "dir": "images", "url": "https://sclogistics.in/wp-content/uploads/2023/09/IMG_8844-copy-scaled.jpg" },
+  "shuttle.jpg": { "dir": "images", "url": "https://sclogistics.in/wp-content/uploads/2023/09/shuttle.jpg" },
+  "emp1.jpg": { "dir": "images", "url": "https://sclogistics.in/wp-content/uploads/2023/09/emp1.jpg" },
+  "carss.jpg": { "dir": "images", "url": "https://sclogistics.in/wp-content/uploads/2023/09/carss.jpg" },
+  "2.jpg": { "dir": "images", "url": "https://sclogistics.in/wp-content/uploads/2024/05/2.jpg" },
+
+  "gep2.jpg": { "dir": "clients", "url": "https://sclogistics.in/wp-content/uploads/2023/08/gep2.jpg" },
+  "fpl.jpg": { "dir": "clients", "url": "https://sclogistics.in/wp-content/uploads/2023/08/fpl.jpg" },
+  "adp.jpg": { "dir": "clients", "url": "https://sclogistics.in/wp-content/uploads/2023/08/adp.jpg" },
+  "micro.jpg": { "dir": "clients", "url": "https://sclogistics.in/wp-content/uploads/2023/08/micro.jpg" },
+  "llyod.jpg": { "dir": "clients", "url": "https://sclogistics.in/wp-content/uploads/2024/09/llyod.jpg" },
+  "ilen.jpg": { "dir": "clients", "url": "https://sclogistics.in/wp-content/uploads/2024/09/ilen.jpg" },
+  "ryan.png": { "dir": "clients", "url": "https://sclogistics.in/wp-content/uploads/2025/04/ryan.png" },
+  "dsv.png": { "dir": "clients", "url": "https://sclogistics.in/wp-content/uploads/2025/04/dsv.png" },
+  "thermo.png": { "dir": "clients", "url": "https://sclogistics.in/wp-content/uploads/2025/04/thermo.png" },
+  "npci2.png": { "dir": "clients", "url": "https://sclogistics.in/wp-content/uploads/2025/04/npci2.png" },
+  "zoe.png": { "dir": "clients", "url": "https://sclogistics.in/wp-content/uploads/2025/04/zoe.png" },
+  "citra.png": { "dir": "clients", "url": "https://sclogistics.in/wp-content/uploads/2025/04/citra.png" }
+}
