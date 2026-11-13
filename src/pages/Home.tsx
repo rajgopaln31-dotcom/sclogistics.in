@@ -2,8 +2,8 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
-import carImage from "../images/carImage.png";
-import manImage from "../images/man.png";
+import car from "../images/car.png";
+import man from "../images/man.png";
 
 import OriginalImage from "../components/OriginalImage";
 import Gallery from "../components/Gallery";
@@ -31,14 +31,14 @@ interface Slide {
 
 const slides: Slide[] = [
   {
-    image: carImage,
+    image: car,
     title: "Welcome to Sri Chinimilli Logistics pvt ltd",
     text: "A leading provider of transportation services in Hyderabad",
     buttonLabel: "Learn More",
     buttonPath: "/about",
   },
   {
-    image: manImage,
+    image: man,
     kicker: "We're thriving and building better",
     title: "Efficient and Effective Transportation",
     text: "We are committed to providing our customers with exceptional service while offering our employees",
@@ -213,7 +213,7 @@ export default function Home() {
       {/* Safety */}
      <section
   className="section safety"
-  style={{ backgroundImage: `url(${carImage})`,}}
+  style={{ backgroundImage: `url(${car})`,}}
 >
   <div className="container safety-grid">
     <div>
