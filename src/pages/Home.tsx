@@ -2,8 +2,8 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
-import car from "../images/car.png";
-import man from "../images/man.png";
+import car from "../Images/car.png";
+import man from "../Images/man.png";
 
 import OriginalImage from "../components/OriginalImage";
 import Gallery from "../components/Gallery";

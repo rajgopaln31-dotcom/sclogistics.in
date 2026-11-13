@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import solution from "../images/solution.png";
+import solution from "../Images/solution.png";
 import OriginalImage from "../components/OriginalImage";
 import "../styles/Solutions.css";
 

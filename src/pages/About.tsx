@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 import OriginalImage from "../components/OriginalImage";
 import "../styles/About.css";
-import about from "../images/about.png";
+import about from "../Images/about.png";
 
 const missionPoints = [
   {

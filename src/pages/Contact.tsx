@@ -1,5 +1,5 @@
 import { Mail, MapPin, Phone } from "lucide-react";
-import contact from "../images/contact.png";
+import contact from "../Images/contact.png";
 import ContactForm from "../components/ContactForm";
 import { contactInfo } from "../data/siteData";
 import "../styles/Contact.css";

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import infrastructure from "../images/infrastrucure.png";
+import infrastructure from "../Images/infrastrucure.png";
 import Gallery from "../components/Gallery";
 import OriginalImage from "../components/OriginalImage";
 import { safetyText } from "../data/siteData";

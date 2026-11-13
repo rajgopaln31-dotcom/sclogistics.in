@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import servicesBanner from "../images/services.png";
+import servicesBanner from "../Images/services.png";
 import OriginalImage from "../components/OriginalImage";
 import "../styles/Services.css";
 
