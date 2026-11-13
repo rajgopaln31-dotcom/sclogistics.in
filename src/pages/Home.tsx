@@ -8,7 +8,7 @@ import man from "../Images/man.png";
 import OriginalImage from "../components/OriginalImage";
 import Gallery from "../components/Gallery";
 import ContactForm from "../components/ContactForm";
-import gopal from "../images/gopal.png";
+import gopal from "../Images/gopal.png";
 
 import {
   
