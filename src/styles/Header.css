@@ -77,3 +77,246 @@
     height: 46px;
   }
 }
+/* Mobile Header */
+@media (max-width: 768px) {
+  .topbar {
+    display: none;
+  }
+
+  .header-quote {
+    display: none;
+  }
+
+  .header-main {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .menu-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: var(--color-primary);
+    padding: 6px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .site-header .topbar {
+    display: none !important;
+  }
+
+  .site-header .header-quote {
+    display: none !important;
+  }
+
+  .site-header .header-main {
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .site-header .menu-toggle {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+  }
+}
+/* Mobile Side Navigation */
+.mobile-menu-panel {
+  display: contents;
+}
+
+.mobile-menu-overlay {
+  display: none;
+}
+
+.mobile-menu-close,
+.mobile-menu-contact,
+.mobile-menu-quote,
+.mobile-menu-socials {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .mobile-menu-overlay {
+    display: block;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.65);
+    z-index: 101;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+  }
+
+  .mobile-menu-panel {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: min(360px, 85vw);
+    height: 100vh;
+    height: 100dvh;
+    background: #00a995;
+    z-index: 102;
+    padding: 25px 24px;
+    overflow-y: auto;
+    transform: translateX(100%);
+    transition: transform 0.35s ease;
+    visibility: hidden;
+  }
+
+  .mobile-menu-panel-open {
+    transform: translateX(0);
+    visibility: visible;
+  }
+
+  .mobile-menu-overlay:has(+ .mobile-menu-panel-open) {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .mobile-menu-close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: flex-start;
+    color: white;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    margin-bottom: 18px;
+  }
+
+  .mobile-menu-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+    margin-top: 28px;
+    color: white;
+    font-size: 14px;
+  }
+
+  .mobile-menu-contact a,
+  .mobile-menu-contact div {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: white;
+    text-decoration: none;
+    overflow-wrap: anywhere;
+  }
+
+  .mobile-menu-contact svg {
+    flex-shrink: 0;
+  }
+
+  .mobile-menu-quote {
+    display: block;
+    background: #f07813;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 600;
+    padding: 14px;
+    margin-top: 28px;
+    border-radius: 3px;
+  }
+
+  .mobile-menu-socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    color: white;
+    margin-top: auto;
+    padding-top: 35px;
+    padding-bottom: 15px;
+  }
+}
+@media (max-width: 768px) {
+  .mobile-menu-panel .navbar {
+    order: 0 !important;
+  }
+
+  .mobile-menu-panel .mobile-menu-contact {
+    order: 1;
+  }
+
+  .mobile-menu-panel .mobile-menu-quote {
+    order: 2;
+  }
+
+  .mobile-menu-panel .mobile-menu-socials {
+    order: 3;
+    margin-top: 35px;
+  }
+}
+@media (max-width: 768px) {
+  .menu-toggle {
+    color: #008000 !important;
+  }
+
+  .menu-toggle svg {
+    stroke: #008000;
+  }
+}
+/* Topbar Layout */
+.topbar-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.topbar-contact {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+/* Topbar Social Icons */
+.topbar-social {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-shrink: 0;
+}
+
+.topbar-social a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  transition: 0.3s ease;
+}
+
+.topbar-social svg {
+  width: 20px;
+  height: 20px;
+  color: #ffffff;
+  stroke: #ffffff;
+}
+
+.topbar-social a:hover {
+  color: #ed6409;
+}
+
+.topbar-social a:hover svg {
+  color: #ed6409;
+  stroke: #ed6409;
+}
+
+/* Mobile Topbar */
+@media (max-width: 768px) {
+  .topbar {
+    display: none !important;
+  }
+}

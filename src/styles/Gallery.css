@@ -57,10 +57,13 @@
     grid-template-columns: repeat(3, 1fr);
   }
 }
-
+/* Mobile view only */
 @media (max-width: 600px) {
   .gallery-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-item {
+    width: 100%;
   }
 }

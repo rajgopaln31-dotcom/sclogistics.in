@@ -121,3 +121,16 @@
 .footer-col:nth-child(4) {
   padding-top: 85px;
 }
+@media (max-width: 560px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-gallery img {
+    width: 100%;
+  }
+}

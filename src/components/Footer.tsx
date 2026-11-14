@@ -1,16 +1,19 @@
 import { Link } from "react-router-dom";
-import { Mail, MapPin, Phone } from "lucide-react";
+import { Facebook, Instagram, Mail, MapPin, Phone, Youtube } from "lucide-react";
 import OriginalImage from "./OriginalImage";
 import { contactInfo, footerGalleryImages } from "../data/siteData";
 import "../styles/Footer.css";
-import { Facebook, Youtube, Instagram } from "lucide-react";
 
 export default function Footer() {
   return (
     <footer className="site-footer">
       <div className="container footer-grid">
         <div className="footer-col">
-          <Link to="/" className="footer-logo">
+          <Link
+            to="/"
+            className="footer-logo"
+            style={{ transform: "translate(20px)" }}
+          >
             <OriginalImage name="logo4.png" alt="Sri Chinimilli Logistics" />
           </Link>
           <p>
@@ -65,38 +68,35 @@ export default function Footer() {
         <p>
           ©2023 <strong>Sri Chinimilli Logistics</strong>. All Rights Reserved
         </p>
-        <div className="footer-bottom">
 
+        <div className="footer-social">
+          <a
+            href="https://www.facebook.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Facebook"
+          >
+            <Facebook />
+          </a>
 
-  <div className="footer-social">
-    <a
-      href="https://www.facebook.com/"
-      target="_blank"
-      rel="noopener noreferrer"
-      aria-label="Facebook"
-    >
-      <Facebook />
-    </a>
+          <a
+            href="https://www.youtube.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="YouTube"
+          >
+            <Youtube />
+          </a>
 
-    <a
-      href="https://www.youtube.com/"
-      target="_blank"
-      rel="noopener noreferrer"
-      aria-label="YouTube"
-    >
-      <Youtube />
-    </a>
-
-    <a
-      href="https://www.instagram.com/"
-      target="_blank"
-      rel="noopener noreferrer"
-      aria-label="Instagram"
-    >
-      <Instagram />
-    </a>
-  </div>
-</div>
+          <a
+            href="https://www.instagram.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram"
+          >
+            <Instagram />
+          </a>
+        </div>
       </div>
     </footer>
   );

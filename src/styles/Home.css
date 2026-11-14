@@ -127,15 +127,19 @@
 }
 
 .photo-row {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  width: 100%;
   margin-top: 28px;
+  border-radius: var(--radius);
 }
 
 .photo-row img {
+  display: block;
+  flex: 0 0 100%;
   width: 100%;
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 16 / 9;
   object-fit: cover;
   border-radius: var(--radius);
 }
@@ -580,4 +584,143 @@
   background-position: center 25%;
   background-repeat: no-repeat;
   padding: 70px 0;
+}
+/* Mobile - Client Logos */
+@media (max-width: 600px) {
+  .client-logos {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    justify-items: center;
+  }
+
+  .client-logos img {
+    width: 320px;
+    max-width: 95%;
+    max-height: 200px;
+    height: auto;
+    object-fit: contain;
+    margin: 0 auto;
+  }
+}
+/* Services Image Slider */
+.service-slider {
+  width: 100%;
+  max-width: 1200px;
+  margin: 30px auto 0;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.service-slider-track {
+  display: flex;
+  width: 100%;
+  transition: transform 0.7s ease-in-out;
+}
+
+.service-slide {
+  flex: 0 0 100%;
+  width: 100%;
+  min-width: 100%;
+}
+
+.service-slide img {
+  display: block;
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 12px;
+}
+
+/* Three Dots */
+.service-slider-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  margin: 20px auto 0;
+}
+
+.service-slider-dots button {
+  width: 10px;
+  height: 10px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background: #aaa;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.service-slider-dots button.active-dot {
+  width: 25px;
+  height: 10px;
+  border-radius: 10px;
+  background: #ff6500;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .service-slider {
+    max-width: 100%;
+  }
+
+  .service-slide img {
+    height: 250px;
+  }
+}
+/* Desktop - 3 Company Logos Per Row */
+@media (min-width: 1024px) {
+  .client-logos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+  }
+}
+/* Desktop and Laptop */
+.safety-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 30px;
+}
+
+.safety-left,
+.safety-right {
+  min-width: 0;
+  width: 100%;
+}
+ .safety-features {
+  
+    color:#ffffff
+  }
+/* Mobile View */
+@media screen and (max-width: 767px) {
+  .safety-grid {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .safety-left {
+    text-align: center;
+  }
+
+  .safety-features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    color:#ffffff
+  }
+
+  .safety-feature {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .safety-right {
+    width: 100%;
+    max-width: 100%;
+  }
 }
