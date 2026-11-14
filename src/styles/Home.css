@@ -724,3 +724,139 @@
     max-width: 100%;
   }
 }
+.overview-text { position: relative; }
+.overview-heading-wrap { position: relative; margin-bottom: 18px; }
+
+.watermark-about {
+  position: absolute;
+  top: -52px;
+  left: -6px;
+  font-size: 118px;
+  font-weight: 800;
+  line-height: 1;
+  color: transparent;
+  -webkit-text-stroke: 1.5px #e8e8e8;
+  pointer-events: none;
+  user-select: none;
+  z-index: 0;
+  white-space: nowrap;
+}
+
+.since-row {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 6px;
+}
+.since-line {
+  width: 52px;
+  height: 4px;
+  background: #ff5a3c;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+.since-orange {
+  color: #f97316 !important;
+  font-size: 19px;
+  font-weight: 800;
+  letter-spacing: 0.2px;
+}
+
+.overview-title {
+  position: relative;
+  z-index: 1;
+  font-size: 48px;
+  line-height: 1.1;
+  margin: 0;
+}
+.company-blue { color: #1e2fa8; }
+.overview-black { color: #2b2f33; }
+
+@media (max-width: 768px) {
+  .watermark-about { font-size: 78px; top: -36px; }
+  .overview-title { font-size: 34px; }
+  .since-orange { font-size: 16px; }
+}
+/* ===== Watermark - Services & Gallery ===== */
+.section-heading-wrap {
+  position: relative;
+  margin-bottom: 18px;
+}
+.section-title {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+}
+.section-watermark {
+  position: absolute;
+  top: -52px;
+  left: -6px;
+  font-size: 118px;
+  font-weight: 800;
+  line-height: 1;
+  color: transparent;
+  -webkit-text-stroke: 1.5px #e8e8e8;
+  pointer-events: none;
+  user-select: none;
+  z-index: 0;
+  white-space: nowrap;
+}
+.since-row {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 6px;
+}
+.since-line {
+  width: 52px;
+  height: 4px;
+  background: #ff5a3c;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
+/* Services - dark background kabatti white light stroke */
+.what-we-do {
+  position: relative;
+  overflow: hidden;
+}
+.watermark-services {
+  -webkit-text-stroke: 1.5px rgba(255,255,255,0.14);
+}
+
+/* Gallery - light background */
+.gallery-section {
+  position: relative;
+  overflow: hidden;
+}
+.watermark-gallery {
+  -webkit-text-stroke: 1.5px #e8e8e8;
+}
+
+@media (max-width: 768px) {
+  .section-watermark {
+    font-size: 74px;
+    top: -34px;
+  }
+}
+/* ===== Mobile Only - Hero Height Perigi White Cover Avvali ===== */
+@media (max-width: 768px) {
+  .hero {
+    margin-top: 0 !important;
+    min-height: 600px !important;
+    height: 600px !important;
+    padding-top: 0;
+  }
+  .hero img,
+  .hero-slider img,
+  .hero-slide img {
+    height: 100% !important;
+    min-height: 600px !important;
+    object-fit: cover !important;
+    object-position: center top !important;
+  }
+}
