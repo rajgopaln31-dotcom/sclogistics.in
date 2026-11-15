@@ -1,5 +1,5 @@
 import { Mail, MapPin, Phone } from "lucide-react";
-import contact from "../Images/contact.png";
+import cars from "../Images/cars.png";
 import ContactForm from "../components/ContactForm";
 import { contactInfo } from "../data/siteData";
 import "../styles/Contact.css";
@@ -8,7 +8,7 @@ export default function Contact() {
   return (
     <div className="contact">
        <section className="about-banner">
-  <img src={contact} alt="Contact Us" />
+  <img src={cars} alt="Contact Us" />
   
 </section>
 

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import infrastructure from "../Images/infrastrucure.png";
+import cars from "../Images/cars.png";
 import Gallery from "../components/Gallery";
 import OriginalImage from "../components/OriginalImage";
 import { safetyText } from "../data/siteData";
@@ -18,7 +18,7 @@ export default function Infrastructure() {
   return (
     <div className="infrastructure">
          <section className="about-banner">
-  <img src={infrastructure} alt="Infrastructure" />
+  <img src={cars} alt="Infrastructure" />
   
 </section>
 

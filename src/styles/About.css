@@ -116,3 +116,49 @@
     font-size: 28px;
   }
 }
+/* Certificate Section */
+.about-certificate {
+  padding: 50px 20px;
+  text-align: center;
+  background: #f8f9fa;
+}
+
+.about-certificate h2 {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.about-certificate p {
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.certificate-image {
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.certificate-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+}
+
+/* Mobile View */
+@media (max-width: 600px) {
+  .about-certificate {
+    padding: 35px 15px;
+  }
+
+  .about-certificate h2 {
+    font-size: 24px;
+  }
+
+  .certificate-image {
+    width: 100%;
+  }
+}

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import servicesBanner from "../Images/services.png";
+import cars from "../Images/cars.png";
 import OriginalImage from "../components/OriginalImage";
 import "../styles/Services.css";
 
@@ -41,7 +41,7 @@ export default function Services() {
   return (
     <div className="services">
        <section className="about-banner">
-  <img src={servicesBanner} alt="Services" />
+  <img src={cars} alt="Services" />
   
 </section>
 

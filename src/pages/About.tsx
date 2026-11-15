@@ -2,7 +2,8 @@ import { Link } from "react-router-dom";
 
 import OriginalImage from "../components/OriginalImage";
 import "../styles/About.css";
-import about from "../Images/about.png";
+import cars from "../Images/cars.png";
+import certificate from "../Images/certificate.png";
 
 const missionPoints = [
   {
@@ -36,7 +37,7 @@ export default function About() {
   return (
     <div className="about-page">
     <section className="about-banner">
-  <img src={about} alt="About Us" />
+  <img src={cars} alt="About Us" />
   
 </section>
      
@@ -48,6 +49,17 @@ export default function About() {
             alt="Sri Chinimilli Logistics team"
           />
           <div>
+            {/* Certificate Section */}
+<section className="about-certificate">
+  <div className="container">
+    <h2>Our Certificate</h2>
+    <p>Our commitment to quality and professional excellence.</p>
+
+    <div className="certificate-image">
+      <img src={certificate} alt="Sri Chinimilli Logistics Certificate" />
+    </div>
+  </div>
+</section>
             <span className="tag">Since from 2016</span>
             <h2>Company Overview</h2>
             <p>
