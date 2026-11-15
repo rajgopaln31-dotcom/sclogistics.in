@@ -42,7 +42,7 @@ export default function Services() {
     <div className="services">
        <section className="about-banner">
   <img src={cars} alt="Services" />
-  
+  <h1>Services</h1>
 </section>
 
       <section className="section services-intro">

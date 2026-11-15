@@ -9,7 +9,7 @@ export default function Contact() {
     <div className="contact">
        <section className="about-banner">
   <img src={cars} alt="Contact Us" />
-  
+  <h1>Contact Us</h1>
 </section>
 
       <section className="section contact-section">

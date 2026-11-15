@@ -36,7 +36,7 @@ export default function Solutions() {
     <div className="solutions">
           <section className="about-banner">
   <img src={cars} alt="Solutions" />
-  
+  <h1>Solutions</h1>
 </section>
 
       <section className="section solutions-intro">

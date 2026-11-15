@@ -19,7 +19,7 @@ export default function Infrastructure() {
     <div className="infrastructure">
          <section className="about-banner">
   <img src={cars} alt="Infrastructure" />
-  
+  <h1>Infrastructure</h1>
 </section>
 
       <section className="section infra-office">

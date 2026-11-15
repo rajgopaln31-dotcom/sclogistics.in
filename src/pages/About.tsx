@@ -38,7 +38,7 @@ export default function About() {
     <div className="about-page">
     <section className="about-banner">
   <img src={cars} alt="About Us" />
-  
+  <h1>About us</h1>
 </section>
      
      
