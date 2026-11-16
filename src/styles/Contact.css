@@ -69,3 +69,84 @@
     font-size: 38px;
   }
 }
+.contact-page .container{
+  max-width:1200px; margin:auto; padding:0 20px;
+}
+
+/* 1. CONTACT CARDS */
+.contact-cards-row{
+  display:flex; gap:20px;
+}
+.contact-card{
+  flex:1;
+  background:#f8f8f8;
+  padding:34px 26px;
+}
+.contact-card-top{
+  display:flex; gap:16px; align-items:flex-start;
+}
+.contact-icon{
+  width:58px; height:58px; flex-shrink:0;
+  background:#fff; border-radius:50%;
+  display:flex; align-items:center; justify-content:center;
+  font-size:26px;
+}
+.contact-card h3{
+  color:#1a3f5e; font-size:22px; font-weight:800;
+  margin:0 0 12px;
+}
+.contact-card p{
+  color:#777; font-size:15px; line-height:1.7; margin:0;
+}
+
+/* 2. CONTACT FORM */
+.form-title{
+  color:#1a3f5e; font-size:22px; font-weight:800;
+  margin-bottom:34px;
+}
+.contact-form{
+  max-width:1000px; margin:auto;
+}
+.form-row{
+  display:flex; gap:24px;
+}
+.form-group{
+  flex:1; margin-bottom:22px;
+}
+.form-group label{
+  display:block; font-size:14px; font-weight:700;
+  color:#111; margin-bottom:12px;
+}
+.form-group input,
+.form-group textarea{
+  width:100%;
+  background:#f8f8f8;
+  border:1px solid #eee;
+  padding:14px 18px;
+  font-size:14px; color:#333;
+  outline:none; box-sizing:border-box;
+}
+.form-group textarea{resize:vertical}
+.form-group input::placeholder,
+.form-group textarea::placeholder{color:#888}
+.form-btn-wrap{
+  display:flex; justify-content:center; margin-top:18px;
+}
+.submit-btn{
+  background:#ff6a00; color:#fff;
+  border:none; padding:14px 70px;
+  font-size:15px; font-weight:700;
+  cursor:pointer;
+}
+
+/* 3. MAP */
+.map-section{padding-bottom:0}
+.map-section iframe{
+  width:100%; height:450px; border:0; display:block;
+}
+
+@media(max-width:768px){
+  .contact-cards-row, .form-row{flex-direction:column}
+  .map-section iframe{height:320px}
+  .submit-btn{width:100%}
+}

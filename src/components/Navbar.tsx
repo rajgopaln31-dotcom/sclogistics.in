@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 import { navItems } from "../data/siteData";
 import "../styles/Navbar.css";
-import ToysIcon from '@mui/icons-material/Toys';
+
 interface NavbarProps {
   isOpen: boolean;
   onNavigate: () => void;
@@ -27,7 +27,7 @@ export default function Navbar({ isOpen, onNavigate }: NavbarProps) {
               {({ isActive }) => (
                 <>
                   <span>{item.label}</span>
-                  {isActive && <ToysIcon className="nav-car" sx={{ fontSize: 22 }} />}
+                  {isActive && <span className="nav-car" aria-hidden="true" />}
                 </>
               )}
             </NavLink>

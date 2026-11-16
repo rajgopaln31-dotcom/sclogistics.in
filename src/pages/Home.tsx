@@ -98,13 +98,13 @@ export default function Home() {
           <h1>
             {current === 0 ? (
               <>
-                <span className="welcome-white">Welcome to </span>
-                <span className="logistics-red">Sri Chinimilli Logistics</span>
+                <span className="welcome-white">Welcome to Sri </span><br/>
+                <span className="logistics-red"> Chinimilli Logistics</span><br/>
                 <span className="welcome-white"> pvt ltd</span>
               </>
             ) : (
               <>
-                <span className="welcome-white">Efficient and Effective </span>
+                <span className="welcome-white">Efficient<br/> and Effective </span><br/>
                 <span className="logistics-red">Transportation</span>
               </>
             )}

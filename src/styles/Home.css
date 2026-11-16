@@ -860,3 +860,44 @@
     object-position: center top !important;
   }
 }
+/* Scrolling Service Image */
+
+.service-slider {
+  width: 100%;
+  margin: 35px auto 0;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.service-moving-image {
+  width: 100%;
+  animation: serviceMove 8s ease-in-out infinite alternate;
+}
+
+.service-moving-image img {
+  display: block;
+  width: 100%;
+  height: 450px;
+  object-fit: contain;
+  object-position: center;
+}
+
+/* Image Movement */
+
+@keyframes serviceMove {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-30px);
+  }
+}
+
+/* Mobile View */
+
+@media (max-width: 600px) {
+  .service-moving-image img {
+    height: 250px;
+  }
+}

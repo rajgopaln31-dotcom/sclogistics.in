@@ -1,55 +1,13 @@
-.solutions-intro {
-  padding-bottom: 20px;
-}
+/* Main Solutions Page */
 
-.solution-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 48px;
-  align-items: center;
-}
-
-.solution-photo {
+.solutions {
   width: 100%;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
-  border-radius: var(--radius);
+  overflow: hidden;
+  background: #ffffff;
 }
 
-.solution-row h2 {
-  margin-bottom: 14px;
-}
+/* Solutions Banner */
 
-.solution-row-alt {
-  background: var(--color-light);
-}
-
-.solution-row-alt .solution-grid > :first-child {
-  order: 2;
-}
-
-.solutions-quote {
-  text-align: center;
-}
-
-.solutions-quote blockquote {
-  max-width: 850px;
-  margin: 0 auto 28px;
-  font-size: 20px;
-  font-style: italic;
-  color: var(--color-primary);
-}
-
-@media (max-width: 800px) {
-  .solution-grid {
-    grid-template-columns: 1fr;
-    gap: 24px;
-  }
-
-  .solution-row-alt .solution-grid > :first-child {
-    order: 0;
-  }
-}
 .about-banner {
   position: relative;
   width: 100%;
@@ -58,7 +16,7 @@
 }
 
 .about-banner img {
-  width: 100%;
+  width: 90%;
   height: 100%;
   object-fit: cover;
 }
@@ -68,13 +26,149 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
+  color: #ffffff;
   font-size: 75px;
   font-weight: 800;
   text-align: center;
   width: 100%;
   margin: 0;
 }
+
+/* Transportation Image and Introduction */
+
+.solutions-intro {
+  max-width: 1140px;
+  padding-top: 25px;
+  padding-bottom: 30px;
+}
+
+.solutions-main-image {
+  display: block;
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+}
+
+.solutions-intro .lead {
+  margin-top: 28px;
+  font-size: 19px;
+  line-height: 1.55;
+  color: #777777;
+  text-align: left;
+}
+
+/* Three Solutions Cards */
+
+.solutions-cards {
+  max-width: 1200px;
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+
+.solutions-card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  align-items: start;
+}
+
+.solutions-card {
+  background: #ffffff;
+  padding: 30px 22px;
+  text-align: center;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.10);
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Card Icons */
+
+.solutions-icon {
+  color: #f07822;
+  margin-bottom: 20px;
+}
+
+.solutions-icon svg {
+  font-size: 55px;
+}
+
+/* Card Headings */
+
+.solutions-card-title {
+  color: #142b70;
+  font-size: 19px !important;
+  font-weight: 700 !important;
+  line-height: 1.15 !important;
+  margin-bottom: 22px !important;
+}
+
+/* Card Description */
+
+.solutions-card-text {
+  color: #686868;
+  font-size: 18px !important;
+  line-height: 1.5 !important;
+  margin-bottom: 25px !important;
+}
+
+/* Know More Button */
+
+.solutions-card-button {
+  background-color: #08b99f !important;
+  color: #ffffff !important;
+  text-transform: none !important;
+  font-size: 15px !important;
+  font-weight: 600 !important;
+  padding: 10px 28px !important;
+  border-radius: 3px !important;
+  margin-top: auto !important;
+}
+
+.solutions-card-button:hover {
+  background-color: #079e89 !important;
+}
+
+/* Quality Quote Section */
+
+.solutions-quote {
+  max-width: 1125px !important;
+  background: #08b99f;
+  padding: 55px 45px !important;
+  margin-top: 10px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.solutions-quote-text {
+  color: #ffffff;
+  font-size: 23px !important;
+  font-weight: 600 !important;
+  line-height: 1.55 !important;
+}
+
+/* Tablet View */
+
+@media (max-width: 900px) {
+  .about-banner {
+    height: 400px;
+  }
+
+  .solutions-card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .solutions-main-image {
+    height: 320px;
+  }
+
+  .solutions-quote {
+    padding: 40px 25px !important;
+  }
+}
+
+/* Mobile View */
 
 @media (max-width: 600px) {
   .about-banner {
@@ -84,4 +178,60 @@
   .about-banner h1 {
     font-size: 38px;
   }
+
+  .solutions-intro {
+    padding: 18px 16px 25px;
+  }
+
+  .solutions-main-image {
+    height: 220px;
+  }
+
+  .solutions-intro .lead {
+    font-size: 15px;
+    line-height: 1.6;
+    margin-top: 18px;
+  }
+
+  .solutions-cards {
+    padding: 15px 16px 30px;
+  }
+
+  .solutions-card-grid {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .solutions-card {
+    padding: 28px 20px;
+  }
+
+  .solutions-icon svg {
+    font-size: 48px;
+  }
+
+  .solutions-card-title {
+    font-size: 18px !important;
+  }
+
+  .solutions-card-text {
+    font-size: 16px !important;
+  }
+
+  .solutions-quote {
+    width: calc(100% - 32px) !important;
+    padding: 30px 18px !important;
+    margin-bottom: 35px;
+  }
+
+  .solutions-quote-text {
+    font-size: 17px !important;
+    line-height: 1.6 !important;
+  }
+}
+.about-banner {
+  position: relative;
+  width: 90%;
+  height: 400px;
+  overflow: hidden;
 }

@@ -70,3 +70,60 @@
     font-size: 38px;
   }
 }
+.infrastructure .container{
+  max-width:1200px; margin:auto; padding:0 20px;
+}
+
+/* HUB + SECURITY */
+.orange-title{
+  color:#ff7a00; font-size:26px; font-weight:800;
+  text-transform:uppercase; margin-bottom:16px;
+}
+.hub-section, .security-section{padding:20px 0}
+.hub-section p, .security-section p{
+  font-size:16px; line-height:1.7; color:#555;
+}
+.check-list{list-style:none; padding:0; margin:22px 0}
+.check-list li{
+  font-size:16px; color:#555; line-height:1.6;
+  padding-left:30px; position:relative; margin-bottom:16px;
+}
+.check-list li::before{
+  content:"✔"; position:absolute; left:0; top:0;
+  width:20px; height:20px; background:#0a8a4a; color:#fff;
+  border-radius:50%; font-size:12px;
+  display:flex; align-items:center; justify-content:center;
+}
+
+/* SCL OFFERING - LEFT TEXT | RIGHT CAR */
+.advantages-row{
+  display:flex;
+  flex-direction:row;
+  gap:40px;
+  align-items:center;
+}
+.advantages-text{
+  flex:1;
+  order:1; /* LEFT */
+}
+.advantages-img{
+  flex:1;
+  order:2; /* RIGHT */
+}
+.advantages-label{
+  color:#f08080; font-size:13px; font-weight:700;
+  display:block; margin-bottom:8px;
+}
+.advantages-text h2{
+  color:#0f3550; font-size:38px; font-weight:800; margin-bottom:16px;
+}
+.advantages-text h2 span{color:#3db5d6}
+.advantages-text p{
+  font-size:16px; line-height:1.7; color:#555;
+}
+.advantages-img img{width:100%; display:block; object-fit:cover}
+
+@media(max-width:768px){
+  .advantages-row{flex-direction:column}
+  .advantages-text h2{font-size:28px}
+}
