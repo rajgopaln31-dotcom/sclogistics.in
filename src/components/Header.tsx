@@ -23,6 +23,12 @@ export default function Header() {
 
   const closeMenu = () => setMenuOpen(false);
 
+  const locationLink =
+    "https://www.google.com/maps?q=Road+No+49,+Swamy+Ayyappa+Society,+Mega+Hills,+Madhapur,+Hyderabad+500081";
+
+  const shareLink =
+    "https://wa.me/?text=Sri%20Chinimilli%20Logistics";
+
   return (
     <header className="site-header">
 
@@ -31,54 +37,86 @@ export default function Header() {
         <div className="container topbar-inner">
 
           <div className="topbar-contact">
-            <a href={contactInfo.phoneTopLink} className="topbar-item">
+
+            {/* Phone */}
+            <a
+              href={contactInfo.phoneTopLink}
+              className="topbar-item"
+            >
               <Phone size={14} />
               {contactInfo.phoneTop}
             </a>
 
-            <a href={`mailto:${contactInfo.email}`} className="topbar-item">
+            {/* Email */}
+            <a
+              href={`mailto:${contactInfo.email}`}
+              className="topbar-item"
+            >
               <Mail size={14} />
               {contactInfo.email}
             </a>
 
-            <span className="topbar-item">
-              <a
-  href="https://www.google.com/maps?q=Road+No+49,+Swamy+Ayyappa+Society,+Mega+Hills,+Madhapur,+Hyderabad+500081&output=embed"
-  className="topbar-item"
-  target="_blank"
-  rel="noopener noreferrer"
->
-  <MapPin size={14} />
-  {contactInfo.checkpost}
-</a>
-            </span>
+            {/* Location */}
+            <a
+              href={locationLink}
+              className="topbar-item"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <MapPin size={14} />
+              {contactInfo.checkpost}
+            </a>
+
           </div>
 
-          {/* Social Media Icons */}
+          {/* Desktop Social Media Icons */}
           <div className="topbar-social">
-            <a href="https://www.facebook.com/" target="_blank"
-              rel="noopener noreferrer" aria-label="Facebook">
+
+            <a
+              href="https://www.facebook.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook"
+            >
               <Facebook />
             </a>
 
-            <a href="https://twitter.com/" target="_blank"
-              rel="noopener noreferrer" aria-label="Twitter">
+            <a
+              href="https://twitter.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Twitter"
+            >
               <Twitter />
             </a>
 
-            <a href="https://www.linkedin.com/" target="_blank"
-              rel="noopener noreferrer" aria-label="LinkedIn">
+            <a
+              href="https://www.linkedin.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+            >
               <Linkedin />
             </a>
 
-            <a href="https://www.youtube.com/" target="_blank"
-              rel="noopener noreferrer" aria-label="YouTube">
+            <a
+              href="https://www.youtube.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="YouTube"
+            >
               <Youtube />
             </a>
 
-            <a href="#" aria-label="Share">
+            <a
+              href={shareLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Share"
+            >
               <Share2 />
             </a>
+
           </div>
 
         </div>
@@ -87,7 +125,12 @@ export default function Header() {
       {/* Main Header */}
       <div className="container header-main">
 
-        <Link to="/" className="header-logo" onClick={closeMenu}>
+        {/* Logo */}
+        <Link
+          to="/"
+          className="header-logo"
+          onClick={closeMenu}
+        >
           <OriginalImage
             name="logo8.png"
             alt="Sri Chinimilli Logistics"
@@ -110,6 +153,7 @@ export default function Header() {
           }
         >
 
+          {/* Close Button */}
           <button
             type="button"
             className="mobile-menu-close"
@@ -119,12 +163,13 @@ export default function Header() {
             <X size={27} />
           </button>
 
+          {/* Navigation Links */}
           <Navbar
             isOpen={menuOpen}
             onNavigate={closeMenu}
           />
 
-          {/* Contact Details */}
+          {/* Mobile Contact Details */}
           <div className="mobile-menu-contact">
 
             <a href={contactInfo.phoneTopLink}>
@@ -137,14 +182,25 @@ export default function Header() {
               <span>{contactInfo.email}</span>
             </a>
 
-            <div>
+            <a
+              href="sms:+919441202828"
+            >
+              <Phone size={19} />
+              <span>Send SMS</span>
+            </a>
+
+            <a
+              href={locationLink}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <MapPin size={19} />
               <span>{contactInfo.checkpost}</span>
-            </div>
+            </a>
 
           </div>
 
-          {/* Quote Button */}
+          {/* Get A Quote */}
           <Link
             to="/contact"
             className="mobile-menu-quote"
@@ -153,28 +209,68 @@ export default function Header() {
             Get A Quote
           </Link>
 
-          {/* Mobile Social Icons */}
+          {/* Mobile Social Media Icons */}
           <div className="mobile-menu-socials">
-            <Facebook size={21} />
-            <Twitter size={21} />
-            <Linkedin size={21} />
-            <Youtube size={21} />
-            <Share2 size={21} />
+
+            <a
+              href="https://www.facebook.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook"
+            >
+              <Facebook size={21} />
+            </a>
+
+            <a
+              href="https://twitter.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Twitter"
+            >
+              <Twitter size={21} />
+            </a>
+
+            <a
+              href="https://www.linkedin.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+            >
+              <Linkedin size={21} />
+            </a>
+
+            <a
+              href="https://www.youtube.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="YouTube"
+            >
+              <Youtube size={21} />
+            </a>
+
+            <a
+              href={shareLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Share"
+            >
+              <Share2 size={21} />
+            </a>
+
           </div>
 
         </div>
 
-        {/* Desktop Quote */}
+        {/* Desktop Quote Button */}
         <Link
           to="/contact"
-       
           className="btn header-quote"
           onClick={closeMenu}
         >
           Get A Quote
         </Link>
 
-        {/* Hamburger */}
+        {/* Hamburger Menu */}
         <button
           type="button"
           className="menu-toggle"
