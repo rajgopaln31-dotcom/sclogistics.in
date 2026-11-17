@@ -256,3 +256,61 @@
     font-size: 23px;
   }
 }
+/* QUOTE BANNER SECTION */
+
+.services-quote {
+  width: 100%;
+  min-height: 300px;
+  padding: 90px 20px;
+  background-color: #f4f6f9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.services-quote .container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.services-quote blockquote {
+  margin: 0;
+  padding: 30px 40px;
+  font-size: 25px;
+  line-height: 1.8;
+  font-weight: 500;
+  color: #14213d;
+  text-align: center;
+
+}
+
+/* TABLET VIEW */
+
+@media (max-width: 768px) {
+  .services-quote {
+    min-height: 280px;
+    padding: 70px 20px;
+  }
+
+  .services-quote blockquote {
+    font-size: 21px;
+    line-height: 1.7;
+    padding: 20px;
+  }
+}
+
+/* MOBILE VIEW */
+
+@media (max-width: 480px) {
+  .services-quote {
+    min-height: 300px;
+    padding: 60px 15px;
+  }
+
+  .services-quote blockquote {
+    font-size: 17px;
+    line-height: 1.8;
+    padding: 15px 10px;
+  }
+}

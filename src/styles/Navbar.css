@@ -142,3 +142,33 @@
     display: none;
   }
 }
+.nav-link {
+  position: relative;
+  text-decoration: none;
+  color: #14213d;
+  padding: 12px 15px;
+  transition: color 0.3s ease;
+}
+
+/* Active Blue Bar */
+
+.nav-link.active {
+  color: #14213d;
+}
+
+.nav-link.active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #0877d1;
+  border-radius: 3px;
+}
+
+/* Hover */
+
+.nav-link:hover {
+  color: #0877d1;
+}

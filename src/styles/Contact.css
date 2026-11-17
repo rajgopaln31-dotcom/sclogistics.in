@@ -150,3 +150,6 @@
   .map-section iframe{height:320px}
   .submit-btn{width:100%}
 }
+.contact-card {
+  border: 10px solid #ef5909;
+}

@@ -112,7 +112,13 @@ export default function Home() {
           <p>
             {current === 0
               ? "A leading provider of transportation services in Hyderabad"
-              : "We are committed to providing our customers with exceptional service while offering our employees"}
+              : (
+                <>
+                  We are committed to providing our customers
+                  <br />
+                  with exceptional service while offering our employees
+                </>
+              )}
           </p>
           <Link to={slide.buttonPath} className="btn">{slide.buttonLabel}</Link>
         </div>

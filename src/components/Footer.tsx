@@ -12,7 +12,7 @@ export default function Footer() {
           <Link
             to="/"
             className="footer-logo"
-            style={{ transform: "translate(20px)" }}
+            style={{ transform: "translatey(20px)" }}
           >
             <OriginalImage name="logo4.png" alt="Sri Chinimilli Logistics" />
           </Link>
@@ -50,15 +50,34 @@ export default function Footer() {
 
         <div className="footer-col">
           <h4>Get in touch</h4>
+
           <ul className="footer-contact">
-            <li><MapPin size={16} /> <span>{contactInfo.officeAddress}</span></li>
+            {/* Location Link */}
+            <li>
+              <MapPin size={16} />
+              <a
+                href="https://www.google.com/maps?q=Road+No+49,+Swamy+Ayyappa+Society,+Mega+Hills,+Madhapur,+Hyderabad+500081&output=embed"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {contactInfo.officeAddress}
+              </a>
+            </li>
+
+            {/* Phone Number Link */}
             <li>
               <Phone size={16} />
-              <span>{contactInfo.officePhones.join(", ")}</span>
+              <a href={`tel:${contactInfo.officePhones[0]}`}>
+                {contactInfo.officePhones.join(", ")}
+              </a>
             </li>
+
+            {/* Email Link */}
             <li>
               <Mail size={16} />
-              <a href={`mailto:${contactInfo.email}`}>{contactInfo.email}</a>
+              <a href={`mailto:${contactInfo.email}`}>
+                {contactInfo.email}
+              </a>
             </li>
           </ul>
         </div>

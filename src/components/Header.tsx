@@ -42,8 +42,15 @@ export default function Header() {
             </a>
 
             <span className="topbar-item">
-              <MapPin size={14} />
-              {contactInfo.checkpost}
+              <a
+  href="https://www.google.com/maps?q=Road+No+49,+Swamy+Ayyappa+Society,+Mega+Hills,+Madhapur,+Hyderabad+500081&output=embed"
+  className="topbar-item"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <MapPin size={14} />
+  {contactInfo.checkpost}
+</a>
             </span>
           </div>
 

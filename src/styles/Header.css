@@ -320,3 +320,35 @@
     display: none !important;
   }
 }
+/* TOPBAR */
+
+.topbar {
+  width: 100%;
+  min-height: 38px;
+  padding: 10px 0;
+}
+
+.topbar-inner {
+  min-height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.topbar-item {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 13px;
+}
+
+.topbar-social {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.topbar-social a {
+  display: flex;
+  align-items: center;
+}
