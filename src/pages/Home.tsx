@@ -104,7 +104,7 @@ export default function Home() {
               </>
             ) : (
               <>
-                <span className="welcome-white">Efficient<br/> and Effective </span><br/>
+                <span className="welcome-white">Efficient And <br/>Effective </span><br/>
                 <span className="logistics-red">Transportation</span>
               </>
             )}
