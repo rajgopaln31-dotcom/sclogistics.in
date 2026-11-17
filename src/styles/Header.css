@@ -352,3 +352,19 @@
   display: flex;
   align-items: center;
 }
+/* Top Bar Color Change */
+
+.site-header .topbar {
+  background: #023d57 !important;
+  color: #ffffff !important;
+}
+
+.site-header .topbar-item {
+  color: #ffffff !important;
+}
+
+.site-header .topbar-social a,
+.site-header .topbar-social svg {
+  color: #ffffff !important;
+  stroke: #ffffff !important;
+}

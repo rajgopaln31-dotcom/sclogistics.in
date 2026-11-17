@@ -907,7 +907,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
-    font-size: 28px;
+    font-size: 18px;
     text-align: center;
     z-index: 2;
   }
@@ -935,5 +935,25 @@
     height: 100% !important;
     object-fit: cover !important;
     object-position: center 85% !important;
+  }
+}
+/* About Banner Heading - Font Size Fix */
+
+/* Desktop & Tablet */
+.about-banner h1 {
+  font-size: 38px !important;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .about-banner h1 {
+    font-size: 28px !important;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 360px) {
+  .about-banner h1 {
+    font-size: 16px !important;
   }
 }
