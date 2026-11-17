@@ -21,7 +21,7 @@ import {
   clientLogos,
   homeGalleryImages,
 } from "../data/siteData";
-
+import scrolling from "../Images/scrolling.png";
 import "../styles/Home.css";
 
 interface Slide {
@@ -49,12 +49,13 @@ const slides: Slide[] = [
     buttonPath: "/services",
   },
 ];
-
 const serviceImages = [
-  { name: "emp-e1725525792611.jpg", alt: "Employee transportation" },
-  { name: "bustp-e1725525819290.jpg", alt: "SCL bus" },
-  { name: "car2-e1725525842332.jpg", alt: "SCL car" },
+  scrolling,
+  scrolling,
+  scrolling,
 ];
+
+
 
 export default function Home() {
   const [current, setCurrent] = useState(0);
@@ -198,33 +199,36 @@ export default function Home() {
             logistics fleet running smoothly, ensuring minimal downtime and
             maximum productivity.
           </p>
+<div className="service-slider">
+  <div
+    className="service-slider-track"
+    style={{ transform: `translateX(-${serviceCurrent * 100}%)` }}
+  >
+    {serviceImages.map((image, index) => (
+      <div className="service-slide" key={index}>
+        <img
+          src={image}
+          alt="Employee transportation"
+        />
+      </div>
+    ))}
+  </div>
+</div>
 
-          <div className="service-slider">
-            <div
-              className="service-slider-track"
-              style={{ transform: `translateX(-${serviceCurrent * 100}%)` }}
-            >
-              {serviceImages.map((image) => (
-                <div className="service-slide" key={image.name}>
-                  <OriginalImage name={image.name} alt={image.alt} />
-                </div>
-              ))}
-            </div>
-          </div>
-
-          <div className="service-slider-dots">
-            {serviceImages.map((image, index) => (
-              <button
-                key={image.name}
-                type="button"
-                className={serviceCurrent === index ? "active-dot" : ""}
-                aria-label={`Show service image ${index + 1}`}
-                aria-current={serviceCurrent === index ? "true" : undefined}
-                onClick={() => setServiceCurrent(index)}
-              />
-            ))}
-          </div>
-        </div>
+<div className="service-slider-dots">
+  {serviceImages.map((_, index) => (
+    <button
+      key={index}
+      type="button"
+      className={serviceCurrent === index ? "active-dot" : ""}
+      aria-label={`Show service image ${index + 1}`}
+      aria-current={serviceCurrent === index ? "true" : undefined}
+      onClick={() => setServiceCurrent(index)}
+    />
+  ))}
+</div>
+      
+  </div>
       </section>
 
       {/* Gallery - Gallery Watermark */}

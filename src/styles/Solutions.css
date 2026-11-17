@@ -235,3 +235,19 @@
   height: 400px;
   overflow: hidden;
 }
+/* Solutions Banner - Desktop Crop */
+
+@media (min-width: 601px) {
+  .solutions .about-banner {
+    width: 100% !important;
+    height: 220px !important;
+    overflow: hidden;
+  }
+
+  .solutions .about-banner img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center 85% !important;
+  }
+}
